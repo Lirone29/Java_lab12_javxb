@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<offer offer_id="2">
+    <offer_description>
+        <offer_name>USA</offer_name>
+        <offer_address>
+            <street>Upper East Side</street>
+            <house_number>1234</house_number>
+            <city>New York</city>
+            <country>USA</country>
+            <hotel_name>DoublteTree by Hilton</hotel_name>
+            <hotel_contact>694355358</hotel_contact>
+        </offer_address>
+        <type>All in clusive</type>
+        <begin_date>2019-01-07</begin_date>
+        <end_date>2019-01-07</end_date>
+        <price>6000</price>
+        <quantity>2</quantity>
+        <transport>Dream Come True</transport>
+        <description>nice description</description>
+    </offer_description>
+    <travelAgency>
+        <travelAgency_name>Dream Come True</travelAgency_name>
+        <travelAgency_street>Mila</travelAgency_street>
+        <travelAgency_number>121</travelAgency_number>
+        <travelAgency_city>Cracow</travelAgency_city>
+        <travelAgency_phone>654 345 532</travelAgency_phone>
+        <travelAgency_email>emal</travelAgency_email>
+    </travelAgency>
+</offer>

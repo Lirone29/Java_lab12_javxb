@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<offer offer_id="1">
+    <offer_description>
+        <offer_name>Grecja</offer_name>
+        <offer_address>
+            <street>Skłodowskiej-Curie</street>
+            <house_number>654</house_number>
+            <city>79/1</city>
+            <country>Poland</country>
+            <hotel_name>WW</hotel_name>
+            <hotel_contact>694355358</hotel_contact>
+        </offer_address>
+        <type>All in clusive</type>
+        <begin_date>2014-01-07</begin_date>
+        <end_date>2014-01-27</end_date>
+        <price>123.23</price>
+        <quantity>2</quantity>
+        <transport>Plane</transport>
+        <description>...</description>
+    </offer_description>
+    <travelAgency>
+        <travelAgency_name>T_Agen</travelAgency_name>
+        <travelAgency_street>Mila</travelAgency_street>
+        <travelAgency_number>21</travelAgency_number>
+        <travelAgency_city>Cracow</travelAgency_city>
+        <travelAgency_phone>sssssvgs</travelAgency_phone>
+        <travelAgency_email>ggg</travelAgency_email>
+    </travelAgency>
+</offer>

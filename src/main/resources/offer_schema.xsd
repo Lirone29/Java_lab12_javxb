@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- definition of simple elements -->
+  <xs:element name="offer_name" type="xs:string"/>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="quantity" type="xs:positiveInteger"/>
+  <xs:element name="price" type="xs:decimal"/>
+
+  <xs:element name="street" type="xs:string"/>
+  <xs:element name="house_number" type="xs:string"/>
+  <xs:element name="city" type="xs:string"/>
+  <xs:element name="country" type="xs:string"/>
+
+  <xs:element name="hotel_name" type="xs:string"/>
+  <xs:element name="hotel_contact" type="xs:string"/>
+
+<xs:element name="travelAgency_name" type="xs:string"/>
+  <xs:element name="travelAgency_street" type="xs:string"/>
+  <xs:element name="travelAgency_number" type="xs:string"/>
+  <xs:element name="travelAgency_city" type="xs:string"/>
+  <xs:element name="travelAgency_phone" type="xs:string"/>
+  <xs:element name="travelAgency_email" type="xs:string"/>
+
+  <xs:element name="begin_date" type="xs:date"/>
+  <xs:element name="end_date" type="xs:date"/>
+  <xs:element name="type" type="xs:string"/>
+  <xs:element name="transport" type="xs:string"/>
+<!-- definition of attributes -->
+<xs:attribute name="offer_id" type="xs:long"/>
+
+  <xs:element name="travelAgency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="travelAgency_name" />
+        <xs:element ref="travelAgency_street"/>
+        <xs:element ref="travelAgency_number" />
+        <xs:element ref="travelAgency_city" />
+        <xs:element ref="travelAgency_phone"/>
+        <xs:element ref="travelAgency_email" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<!-- definition of complex elements -->
+<xs:element name="offer_address">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="street"/>
+      <xs:element ref="house_number"/>
+      <xs:element ref="city"/>
+      <xs:element ref="country"/>
+      <xs:element ref="hotel_name"/>
+      <xs:element ref="hotel_contact" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+  <!-- definition of complex elements -->
+  <xs:element name="offer_description">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="offer_name"/>
+        <xs:element ref="offer_address"/>
+        <xs:element ref="type"/>
+        <xs:element ref="begin_date"/>
+        <xs:element ref="end_date"/>
+        <xs:element ref="price"/>
+        <xs:element ref="quantity"/>
+        <xs:element ref="transport"/>
+        <xs:element ref="description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- definition of complex elements -->
+  <xs:element name="offer">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="offer_description"/>
+      <xs:element ref="travelAgency"/>
+    </xs:sequence>
+    <xs:attribute ref="offer_id" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+
+	
